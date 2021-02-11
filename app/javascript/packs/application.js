@@ -14,3 +14,10 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+const audio = new Audio('assets/sound.mp3');
+
+window.addEventListener("DOMContentLoaded", event => {
+  audio.volume = 1;
+  audio.play();
+});
